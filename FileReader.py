@@ -32,4 +32,12 @@ def read_files():
                 read = True
             else:
                 read = False
-        return new_loc
+
+            elif read:
+                for j in i:
+                    if " " != j:
+                        if header in new_loc.keys():
+                            new_loc[header].append(j)
+                        else:
+                            new_loc[header] = [j]
+        return new_loc, new_qua
