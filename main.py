@@ -5,5 +5,5 @@
 import FileReader
 
 if __name__ == '__main__':
-    FileReader.read_files()
+    new_loc = FileReader.read_files()
 
