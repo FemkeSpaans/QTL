@@ -10,7 +10,7 @@ import scipy.stats
 
 def calculate_anova(list_with_dict):
     """
-
+    Calculates a one way anova, and writes the marker, pvalue, fvalue and count to the file.
     :param list_with_dict:
     :return:
     """

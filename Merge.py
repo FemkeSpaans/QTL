@@ -6,14 +6,12 @@
 
 def merge_files(new_loc, new_qua):
     """
-
+    Iterates through both files and put them into one file with the format # {marker:{a:[value],b:[value]}}
     :param new_loc:
     :param new_qua:
-    :return:
+    :return: list_with_dict
     """
     list_with_dict = {}
-
-    # {marker:{a:[waarde],b:[waarde]}}
     for marker, loc in new_loc.items():
         temp = {"a": [], "b": []}
         for l in range(len(loc)):

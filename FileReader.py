@@ -5,8 +5,10 @@
 
 def read_files():
     """
-
-    :return:
+    Reads the files CvixLerC9.loc and CvixLerC9.qua.
+    Changes the file CvixLerC9.qua into the format [['1', '1.279502474'], ['3', '0.303712231']....]
+    Changes the file CvixLerC9.loc {'PVV4 (a,b) ; 1': ['a', 'a', 'b', 'a', 'b', 'b', 'a',
+    :return: new_loc, new_qua
     """
     with open("CvixLerC9.loc") as loc, open("CvixLerC9.qua") as qua:
         qua_file = (qua.read().split('\n'))
@@ -40,4 +42,5 @@ def read_files():
                             new_loc[header].append(j)
                         else:
                             new_loc[header] = [j]
+
         return new_loc, new_qua
